@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <link rel="icon" type="image/x-icon" href="./assets/icons/favicon/favicon-bupa.png"/>
-    <link rel="stylesheet" href="css/styles.css"/>
     <link rel="stylesheet" href="css/libs/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/libs/progress-tracker.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/styles-licencia.css"/>
     <title>Cruz Blanca</title>
   </head>
   <body>
@@ -33,106 +34,379 @@
                 <p class="data-txt">Bienvenida</p>
                 <p class="user-name">andrea lagos</p>
               </div>
-              <div class="sesion-user-data-menu"><img src="assets/icons/icon-question.svg" alt=""/></div>
             </div>
           </div>
         </div>
       </header>
       <nav class="menu-navbar hide-sm">
         <ul>
-          <li><a class="active" href="#">Inicio</a></li>
+          <li><a href="#">Inicio</a></li>
           <li><a href="#">Plan de Salud</a></li>
           <li><a href="#">Cotizaciones</a></li>
           <li><a href="#">Bonos</a></li>
           <li><a href="#">Reembolsos</a></li>
           <li><a href="#">Presupuetos</a></li>
-          <li><a href="#">Licencias médicas</a></li>
+          <li><a class="active" href="#">Licencias médicas</a></li>
           <li><a href="#">Ges/Caec</a></li>
         </ul>
       </nav>
       <div class="breadcrumb hide-sm">
         <ul>
           <li><a class="txt-black" href="#">Inicio /</a></li>
-          <li><a class="txt-grey" href="#">Reembolso en linea /</a></li>
-          <li><a class="txt-blue" href="#">Mis Solicitudes</a></li>
+          <li><a class="txt-grey" href="#">Mis licencias médicas</a></li>
         </ul>
       </div>
-      <section class="hide-sm">
-        <h1 class="section-title section-title_desk"> Mis licencias</h1>
-      </section>
-      <div class="breadcrumb-mo hide-md hide-lg"><a href="#"><img src="assets/icons/icon-arrow-left.svg" alt=""/>
-          <p>Volver</p></a></div>
-    </div>
-    <div class="narrow-container">
-      <div class="list-item">
-        <div class="list-info-box">
-          <h2>Licencia Rechazada</h2><span class="bajada">Nº licencia: 333942489</span>
+      <section class="sectionLicencias">
+        <div class="hide-sm">
+          <h1 class="section-title section-title_desk"> Estado de mi licencia médica</h1>
         </div>
-        <div class="body-box border-top-list">
-          <div class="item-licencia">
-            <div class="row">
-              <div class="item-icon col-lg-1 col-md-1 col-sm-1 col-xs-1 no-padding"><img src="assets/icons/icon-rechazado.svg"/></div>
-              <div class="item-info col-lg-8 col-md-8 col-sm-8 col-xs-8">
-                <h3 class="item-info_title rechazada">Rechazada</h3>
-                <p class="item-info_servicio"></p>
-                <p class="item-info_asunto item-normal_strong">Estrés laboral</p>
-                <p class="item-info_user">Rompecabeza SPA</p>
-                <div class="item-prices">
-                  <div class="item-col">
-                    <p class="item-normal grey">Dias solicitados</p>
-                    <p class="value grey">10</p>
+        <div class="breadcrumb-mo hide-md hide-lg"><a href="#"><img src="assets/icons/icon-arrow-left.svg" alt=""/>
+            <p>Volver</p></a></div>
+        <div class="tipoLicencia hide-md hide-lg">
+          <div class="tipoLicencia_title">
+            <h2>Estado de mi licencia médica</h2>
+            <div class="tooltipImg"><img src="./assets/icons/icon_tooltip.svg"/>
+              <div class="tooltip">
+                <h3>Estados de licencias médicas</h3>
+                <div class="tooltipBox">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td><img src="assets/icons/icon-recibida.svg"/></td>
+                        <td>
+                          <p><span>Recibida:</span> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><img src="assets/icons/icon-pendiente.svg"/></td>
+                        <td>
+                          <p><span>Pendiente:</span> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><img src="assets/icons/icon-rechazado.svg"/></td>
+                        <td>
+                          <p><span>Rechazada:</span> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><img src="assets/icons/icon-reducida.svg"/></td>
+                        <td>
+                          <p><span>Reducida:</span> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><img src="assets/icons/icon-ampliada.svg"/></td>
+                        <td>
+                          <p><span>Ampliada:</span> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><img src="assets/icons/icon-aprobado.svg"/></td>
+                        <td>
+                          <p><span>Aprobada:</span> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><img src="assets/icons/icon-pagada.svg"/></td>
+                        <td>
+                          <p><span>Pagada:</span> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div><span class="bajada">Nº licencia: 362674</span>
+        </div>
+        <div class="tabla-licencias tablaInterior">
+          <table>
+            <thead class="hide-sm">
+              <tr>
+                <th class="col_estado" scope="col">Estado licencia
+                  <div class="tooltipImg"><img src="./assets/icons/icon_tooltip.svg"/>
+                    <div class="tooltip">
+                      <h3>Estados de licencias médicas</h3>
+                      <div class="tooltipBox">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td><img src="assets/icons/icon-recibida.svg"/></td>
+                              <td>
+                                <p><span>Recibida:</span> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><img src="assets/icons/icon-pendiente.svg"/></td>
+                              <td>
+                                <p><span>Pendiente:</span> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><img src="assets/icons/icon-rechazado.svg"/></td>
+                              <td>
+                                <p><span>Rechazada:</span> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><img src="assets/icons/icon-reducida.svg"/></td>
+                              <td>
+                                <p><span>Reducida:</span> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><img src="assets/icons/icon-ampliada.svg"/></td>
+                              <td>
+                                <p><span>Ampliada:</span> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><img src="assets/icons/icon-aprobada.svg"/></td>
+                              <td>
+                                <p><span>Aprobada:</span> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><img src="assets/icons/icon-pagada.svg"/></td>
+                              <td>
+                                <p><span>Pagada:</span> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
                   </div>
-                  <div class="item-col border-col">
-                    <p class="item-normal">Dias autorizados</p>
-                    <p class="value">0</p>
+                </th>
+                <th class="col_ingreso" scope="col">Ingreso</th>
+                <th class="col_pago" scope="col">Nº licencia</th>
+                <th class="col_nombre" scope="col">Nombre licencia</th>
+                <th class="col_empleador" scope="col">Empleador</th>
+                <th class="col_solicitado" scope="col">Dias solicitados</th>
+                <th class="col_autorizado" scope="col">Dias autorizados</th>
+                <th class="col_icon" scope="col">&nbsp;</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr></tr>
+              <td>
+                <p class="estadoLicencia"><img class="icon-state" src="assets/icons/icon-rechazado.svg"/><span class="titulo-rechazada">Rechazada</span></p>
+                <p class="motivo hide-md hide-lg">Estrés laboral</p>
+                <p class="empleador hide-md hide-lg">Rompecabeza SPA</p>
+              </td>
+              <td class="hide-sm"><span class="light-typo">6 Jun 2018</span></td>
+              <td class="hide-sm"><span class="bold-typo">362674</span></td>
+              <td class="hide-sm"><span class="bold-typo">Estrés laboral</span><a class="modificarSpan" data-toggle="modal" data-target="#modalCambioNombre"><img src="./assets/icons/icon_pencil.svg"/>
+                  <p>Modificar nombre</p></a></td>
+              <td class="hide-sm"><span class="light-typo">Rompecabeza SPA</span></td>
+              <td class="hide-sm"><span class="bold-typo">10</span></td>
+              <td class="hide-sm"><span class="bold-typo">0</span></td>
+              <td class="right next-col">
+                <p class="fecha hide-md hide-lg">Ingreso</p>
+                <p class="fecha hide-md hide-lg">6 Jun 2018</p>
+              </td>
+            </tbody>
+            <tr class="hide-md hide-lg">
+              <td class="days-row tableComplete" colspan="2">
+                <div class="dias-solicitados">
+                  <p class="dias_grey">Dias solicitados</p>
+                  <p class="n-dias_grey">10</p>
+                </div>
+                <div class="dias-autorizados">
+                  <p class="dias_black">Dias autorizados</p>
+                  <p class="n-dias_black">0</p>
+                </div>
+              </td>
+              <tr class="hide-md hide-lg modificarNombre">
+                <td colspan="2">
+                  <button data-toggle="modal" data-target="#modalCambioNombre"><img src="./assets/icons/icon_pencil.svg"/><span>Modificar nombre</span></button>
+                </td>
+              </tr>
+            </tr>
+          </table>
+        </div>
+        <div class="flujo-licencias_interior detalle_rechazada">
+          <ul class="progress-tracker progress-tracker--vertical">
+            <li class="progress-step is-complete"><span class="progress-marker"></span>
+              <div class="progressTableItem">
+                <table>
+                  <tr>
+                    <td class="hide-sm">
+                      <p class="step-date">15/04/2018</p>
+                    </td>
+                    <td>
+                      <p class="step-date hide-md hide-lg">15/04/2018</p>
+                      <h4 class="progress-title">Ingreso de licencia</h4>
+                      <p class="step-content hide-md hide-lg">Evaluaremos la información que nos enviaste y te notificaremos en pocos días.</p><a class="progress-tableIcon hide-md hide-lg"><img src="./assets/icons/icon_descargar.svg" alt=""/><span>Descargar licencia</span></a>
+                    </td>
+                    <td class="hide-sm">
+                      <p class="step-content">Evaluaremos la información que nos enviaste y te notificaremos en pocos días.</p>
+                    </td>
+                    <td class="hide-sm"><a class="progress-tableIcon"><img src="./assets/icons/icon_descargar.svg" alt=""/><span>Descargar licencia</span></a></td>
+                  </tr>
+                </table>
+              </div>
+            </li>
+            <li class="progress-step is-complete"><span class="progress-marker"></span>
+              <div class="progressTableItem">
+                <table>
+                  <tr>
+                    <td class="hide-sm">
+                      <p class="step-date">20/04/2018</p>
+                    </td>
+                    <td>
+                      <p class="step-date hide-md hide-lg">20/04/2018</p>
+                      <h4 class="progress-title">Revisión licencia</h4>
+                      <p class="step-content hide-md hide-lg">Estamos revisando la documentación de la licencia.</p>
+                    </td>
+                    <td class="hide-sm">
+                      <p class="step-content">Estamos revisando la documentación de la licencia.</p>
+                    </td>
+                    <td class="hide-sm"></td>
+                  </tr>
+                </table>
+              </div>
+            </li>
+            <li class="progress-step is-complete"><span class="progress-marker hidden"></span><img class="icon-marker" src="assets/icons/icon-rechazado-fondo.svg" alt=""/>
+              <div class="progressTableItem">
+                <table>
+                  <tr>
+                    <td class="hide-sm">
+                      <p class="step-date">05/05/2018</p>
+                    </td>
+                    <td>
+                      <p class="step-date hide-md hide-lg">05/05/2018</p>
+                      <h4 class="progress-title incomplete">Resolución licencia</h4>
+                      <p class="step-content hide-md hide-lg"><span class="color">Sin antecedentes médicos que respalden el diagnóstico:</span> se aplica cuando no se adjuntan los antecedentes médicos asociados a la respectiva licencia médica. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p><a class="progress-tableIcon hide-md hide-lg" href="licencias-detalle.html"><img src="./assets/icons/icon-glosa.svg" alt=""/><span>Resolución</span></a>
+                    </td>
+                    <td class="hide-sm">
+                      <p class="step-content"><span class="color">Sin antecedentes médicos que respalden el diagnóstico:</span> se aplica cuando no se adjuntan los antecedentes médicos asociados a la respectiva licencia médica. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                    </td>
+                    <td class="hide-sm"><a class="progress-tableIcon" data-toggle="modal" data-target="#modalDetalleLicencia"><img src="./assets/icons/icon-glosa.svg" alt=""/><span>Resolución</span></a></td>
+                  </tr>
+                </table>
+              </div>
+              <div class="modales modalDetalle modal fade" id="modalDetalleLicencia" tabindex="-1" role="dialog" aria-labelledby="reembolsoInfoModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span class="grey" aria-hidden="true">×</span></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="calculoModal">
+                        <h3 class="modal-subTitle">Resolución licencia</h3>
+                        <div class="importantInfo big"><img src="./assets/icons/icon_info.svg" alt=""/>
+                          <p>Si tu licencia es inferior a 11 días debes considerar que los primeros 3 días de licencia médica <span>no se pagarán</span>.</p>
+                        </div>
+                        <div class="licencia-detalles">
+                          <div class="row">
+                            <div class="col-xs-12 col-sm-6 datos-beneficiario">
+                              <div class="title-detalles">Beneficiario</div>
+                              <div class="body-detalles">Eduardo Rojas Calderón - Titular</div>
+                              <div class="title-detalles">Diagnóstico</div>
+                              <div class="body-detalles">Tendinitis</div>
+                              <div class="title-detalles">Tipo de licencia</div>
+                              <div class="body-detalles">362674</div>
+                              <div class="title-detalles">Fecha recepción </div>
+                              <div class="body-detalles">22/10/2018</div>
+                              <div class="title-detalles">Empleador</div>
+                              <div class="body-detalles">Rompecabeza SPA </div>
+                              <div class="row"> 
+                                <div class="col-xs-6 no-padding">
+                                  <div class="title-detalles">Días solicitados</div>
+                                  <div class="body-detalles">20</div>
+                                </div>
+                                <div class="col-xs-6 no-padding">
+                                  <div class="title-detalles">Días autorizados</div>
+                                  <div class="body-detalles">20</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 datos-licencia">
+                              <div class="row">
+                                <div class="col-xs-6 no-padding">
+                                  <div class="title-detalles">Inicio licencia</div>
+                                  <div class="body-detalles">10/04/2018</div>
+                                  <div class="title-detalles">Jornada</div>
+                                  <div class="body-detalles">Medio día</div>
+                                </div>
+                                <div class="col-xs-6 no-padding">
+                                  <div class="title-detalles">Término licencia</div>
+                                  <div class="body-detalles">10/11/2018</div>
+                                  <div class="title-detalles">Días a pagar</div>
+                                  <div class="body-detalles">20</div>
+                                </div>
+                              </div>
+                              <div class="row boxPago">
+                                <div class="col-xs-6 no-padding">
+                                  <div class="title-detalles">1º pago</div>
+                                  <div class="body-detalles">$200.000</div>
+                                  <div class="title-detalles">2º pago</div>
+                                  <div class="body-detalles">$200.000</div>
+                                  <div class="title-detalles">Monto total a pagar</div>
+                                  <div class="body-detalles">$578.410</div>
+                                </div>
+                                <div class="col-xs-6 no-padding">
+                                  <div class="title-detalles">Fecha de pago</div>
+                                  <div class="body-detalles">21/04/2018</div>
+                                  <div class="title-detalles">Fecha de pago</div>
+                                  <div class="body-detalles">21/04/2018</div>
+                                </div>
+                              </div>
+                              <div class="title-detalles">Pago</div>
+                              <div class="body-detalles">Depósito cuenta bancaria</div>
+                              <div class="linkDeposito"><span>Ver cuenta</span><img src="assets/icons/icon-ojo.svg" alt=""/></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="item-links"><a href="#"><img class="step-img" src="assets/icons/icon_pencil.svg"/><span>Modificar nombre licencia</span></a></div>
               </div>
-              <div class="item-details col-lg-3 col-md-3 col-sm-3 col-xs-3 center">
-                <div class="item-details-date">
-                  <p>23 Abr</p>
+            </li>
+          </ul>
+          <div class="box-anexo">
+            <h4><img src="assets/icons/icon-recordatorio.svg" alt=""/>¿Qué tengo que hacer?</h4>
+            <p class="box-anexo_text">De acuerdo a la normativa vigente, tus antecedentes serán enviados directamente a la <span>COMPIN</span> más cercana a tu domicilio registrado para su revisión y pronunciamiento.</p>
+            <div class="sucursalCompin">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6 no-padding">
+                  <div class="sucursalCompin_img"><img src="./assets/icons/icon-calendar.svg"/></div>
+                  <div class="sucursalCompin_text">
+                    <h6>Envío de antecedentes a COMPIN</h6>
+                    <p>08 de Julio del 2018</p>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 no-padding">
+                  <div class="sucursalCompin_img"><img src="./assets/icons/icon-location.svg"/></div>
+                  <div class="sucursalCompin_text">
+                    <p>Sucursal asignada: COMPIN Oriente</p><a href="https://www.google.com/maps/place/Av.+Manquehue+Sur+329,+Las+Condes,+Regi%C3%B3n+Metropolitana/data=!4m2!3m1!1s0x9662cee75e0e9d2d:0x19d554038847d4dc?ved=2ahUKEwjljeXGvs_eAhWDjJAKHa1hCIEQ8gEwAHoECAAQAQ" target="_blank"><span>Av. Manquehue Sur 329, Las Condes, Región Metropolitana</span></a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="flujo-licencias">
-          <ul class="progress-tracker progress-tracker--vertical">
-            <li class="progress-step is-complete"><span class="progress-marker"></span><span class="progress-text">
-                <p class="step-date">12/03/2018</p>
-                <h4 class="progress-title">Ingreso de licencia</h4>
-                <p class="step-content bottom-lg">Evaluaremos la información que nos enviaste y te notificaremos en pocos días.</p></span></li>
-            <li class="progress-step"><span class="progress-marker hidden"></span><img class="icon-marker" src="assets/icons/icon-rechazado.svg" alt=""/><span class="progress-text">
-                <p class="step-date">17/03/2018</p>
-                <h4 class="progress-title grey">Resolución de la licencia</h4>
-                <p class="step-content rechazada">Reposo injustificado</p>
-                <p class="step-content bottom-lg">La licencia fue rechazada por resposo injustificado</p><a class="step-link" href="#"><img class="step-img" src="assets/icons/icon-glosa.svg" alt=""/><span>Ver glosa técnica</span></a></span></li>
-          </ul>
-        </div>
-        <div class="reminder center">
-          <div class="title-sucursal"><img src="assets/icons/icon-recordatorio.svg" alt=""/><span>¿Qué tengo que hacer?</span></div>
-          <p class="left">De acuerdo a la normativa vigente, tus antecedentes serán enviados directamente a la COMPIN para su revisión y pronunciamiento.</p>
-        </div>
-        <div class="info-sucursal">
-          <div class="row">
-            <div class="col-xs-12 col-sm-6">
-              <div class="sucursal-datos">
-                <h6>Sucursal</h6>
-                <p>COMPIN Oriente</p><a class="step-link"><span>Av. Manquehue Sur 329, Las Condes, R. M.</span><img class="step-img" src="assets/icons/icon-location.svg" alt=""/></a>
-              </div>
+      </section>
+      <div class="modalCambio modal fade" id="modalCambioNombre" tabindex="-1" role="dialog" aria-labelledby="reembolsoModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5>Modificar nombre de licencia</h5>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close">×</button>
             </div>
-            <div class="col-xs-12 col-sm-6">
-              <div class="sucursal-fecha">
-                <h6>Recepción antecedentes</h6>
-                <p>08 de Julio del 2018</p>
+            <div class="modal-body">
+              <p>Nombre de licencia</p>
+              <input type="text" value="Resfrío pepita"/>
+              <div class="btnDown">
+                <button class="btn-blue" type="button" data-dismiss="modal">Guardar</button>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="main-container">
       <div class="navbar-bottom hide-sm"><a href="#">
           <div class="navbar-bottom-return"><img src="assets/icons/icon-volverizq.svg" alt=""/>
             <p>Volver</p>
@@ -147,5 +421,6 @@
     </div>
     <script src="js/libs/jquery-3.3.1.min.js"></script>
     <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/funciones-licencia.js"></script>
   </body>
 </html>

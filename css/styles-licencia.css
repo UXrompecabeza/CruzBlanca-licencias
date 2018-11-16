@@ -1,0 +1,1631 @@
+@charset "UTF-8";
+.tipoLicencia.indexTitle {
+  border: none !important;
+  position: relative;
+}
+
+.tipoLicencia.indexTitle .tipoLicencia_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tipoLicencia.indexTitle .tipoLicencia_title .tooltipImg {
+  margin-left: .5em;
+  position: relative;
+  z-index: 21;
+}
+
+.tipoLicencia.indexTitle .link-historico {
+  cursor: pointer;
+}
+
+.tipoLicencia.indexTitle .link-historico img {
+  margin-right: .5em;
+  vertical-align: bottom;
+}
+
+.tipoLicencia.indexTitle .link-historico span {
+  font-size: 14px;
+  color: #1697F3;
+}
+
+.tipoLicencia.indexTitle .link-historico.hide-md {
+  padding: .5em 0;
+  display: block;
+}
+
+.tipoLicencia.indexTitle .link-historico.hide-sm {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: -2.5em;
+}
+
+.tipoLicencia {
+  border-bottom: 1px solid #c0def2;
+  padding-bottom: 1em;
+}
+
+.tipoLicencia .importantInfo {
+  margin: 1em 0 0 !important;
+}
+
+.licencias-index {
+  position: relative;
+}
+
+.licencias-index .fecha {
+  padding-right: 2em;
+}
+
+.sectionLicencias .tipoLicencia_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.sectionLicencias .tipoLicencia_title .tooltipImg {
+  margin-left: .5em;
+  position: relative;
+  z-index: 21;
+}
+
+.sectionLicencias .importantInfo {
+  margin: -1.5em auto 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 75%;
+  padding: 1em 2em;
+  border-radius: 8px;
+  border: 1px dotted #0079c7;
+  background-color: #f7f7f7;
+}
+
+.sectionLicencias .importantInfo p {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 15px;
+  font-style: italic;
+  color: #4c4c4c;
+  text-align: left;
+}
+
+.sectionLicencias .importantInfo p span {
+  font-style: italic;
+  font-weight: 500;
+  color: #0079c7;
+}
+
+.sectionLicencias .importantInfo img {
+  margin-right: 1em;
+  height: 24px;
+}
+
+.sectionLicencias .importantInfo.alertInfo {
+  width: 91%;
+  border: 1px dotted #fb7c40;
+  background-color: #fdf6dd;
+}
+
+.sectionLicencias .importantInfo.alertInfo p span {
+  font-weight: 500;
+  color: #4c4c4c;
+}
+
+.sectionLicencias .importantInfo.alertInfo p span.anclaSpan {
+  color: #00a8ff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.tabla-licencias.tablaInterior tbody tr {
+  background-color: #ecf6ff;
+  border-bottom: none;
+}
+
+.tabla-licencias table {
+  width: 100%;
+}
+
+.tabla-licencias table thead tr th {
+  border-bottom: 2px solid #0079c8 !important;
+  border-top: none !important;
+  font-weight: 500;
+  font-size: 14px;
+  padding: .5em .75rem;
+}
+
+.tabla-licencias table thead tr .col_estado {
+  width: 18%;
+}
+
+.tabla-licencias table thead tr .col_estado .tooltipImg {
+  display: inline-block;
+  position: relative;
+  margin-top: -21px;
+}
+
+.tabla-licencias table thead tr .col_ingreso {
+  width: 7%;
+}
+
+.tabla-licencias table thead tr .col_nombre {
+  width: 18%;
+}
+
+.tabla-licencias table thead tr .col_empleador {
+  width: 18%;
+}
+
+.tabla-licencias table thead tr .col_solicitado {
+  width: 13%;
+}
+
+.tabla-licencias table thead tr .col_autorizado {
+  width: 14%;
+}
+
+.tabla-licencias table thead tr .col_pago {
+  width: 11%;
+}
+
+.tabla-licencias table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.tabla-licencias table tbody td {
+  padding: 1.5em .75rem;
+}
+
+.tabla-licencias table tbody td span {
+  font-size: 14px;
+}
+
+.tabla-licencias table tbody td .light-typo {
+  font-weight: 300;
+  color: #767676;
+}
+
+.tabla-licencias table tbody td .bold-typo {
+  font-weight: 400;
+  color: #4a4a4a;
+}
+
+.tabla-licencias table tbody td .modificarSpan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.tabla-licencias table tbody td .modificarSpan p {
+  width: 90%;
+  margin-left: 5px;
+  font-size: 12px;
+  color: #1697F3;
+}
+
+.tabla-licencias table tbody .modificarNombre {
+  cursor: pointer;
+  border: none;
+}
+
+.tabla-licencias table tbody .modificarNombre td button {
+  padding-left: 2em;
+  border: none;
+  background-color: transparent;
+}
+
+.tabla-licencias table tbody .modificarNombre td button img {
+  margin-right: 5px;
+}
+
+.tabla-licencias table tbody .modificarNombre td button span {
+  font-size: 12px;
+  color: #1697F3;
+}
+
+.tabla-licencias table tbody .next-col {
+  vertical-align: top;
+  padding-right: 1em !important;
+  width: 30%;
+}
+
+.tabla-licencias table tbody .next-col .icon-arrow {
+  margin-top: .5em;
+}
+
+.tabla-licencias table tbody .estadoLicencia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tabla-licencias table tbody .estadoLicencia .icon-state {
+  width: 19px;
+}
+
+.tabla-licencias table tbody .estadoLicencia .titulo, .tabla-licencias table tbody .estadoLicencia .titulo-recibida, .tabla-licencias table tbody .estadoLicencia .titulo-pendiente, .tabla-licencias table tbody .estadoLicencia .titulo-rechazada, .tabla-licencias table tbody .estadoLicencia .titulo-reducida, .tabla-licencias table tbody .estadoLicencia .titulo-ampliada, .tabla-licencias table tbody .estadoLicencia .titulo-pagada {
+  width: calc(100% - 19px);
+  font-size: 14px;
+  font-weight: 400;
+  vertical-align: middle;
+  padding-left: .5em;
+}
+
+.tabla-licencias table tbody .estadoLicencia .titulo-recibida {
+  color: #678003;
+}
+
+.tabla-licencias table tbody .estadoLicencia .titulo-pendiente {
+  color: #a4219b;
+}
+
+.tabla-licencias table tbody .estadoLicencia .titulo-rechazada {
+  color: #d81e05;
+}
+
+.tabla-licencias table tbody .estadoLicencia .titulo-reducida {
+  color: #fb7c40;
+}
+
+.tabla-licencias table tbody .estadoLicencia .titulo-ampliada {
+  color: #40a2a4;
+}
+
+.tabla-licencias table tbody .estadoLicencia .titulo-pagada {
+  color: #007a3d;
+}
+
+.tabla-licencias table tbody .bajada-pagada {
+  font-size: 12px;
+  font-weight: 300;
+  color: #007a3d;
+  padding-left: 2em;
+}
+
+.tabla-licencias table tbody .motivo {
+  font-size: 15px;
+  color: #4a4a4a;
+  font-weight: 500;
+  padding: .3em 0 .2em 1.7em;
+}
+
+.tabla-licencias table tbody .empleador, .tabla-licencias table tbody .dias_grey {
+  font-size: 11px;
+  color: #767676;
+  font-weight: 300;
+  padding-left: 2.35em;
+}
+
+.tabla-licencias table tbody .empleador {
+  padding-bottom: 1em;
+}
+
+.tabla-licencias table tbody .fecha, .tabla-licencias table tbody .dias_black {
+  font-size: 11px;
+  color: #4a4a4a;
+  font-weight: 300;
+}
+
+.tabla-licencias table tbody .days-row {
+  border-bottom: 1px solid #bfbfbf;
+}
+
+.tabla-licencias table tbody .days-row.tableComplete {
+  padding-bottom: 1.5em !important;
+}
+
+.tabla-licencias table tbody .days-row .dias-solicitados {
+  display: inline-block;
+  border-right: 2px solid #bfbfbf;
+  padding-right: 1.5em;
+}
+
+.tabla-licencias table tbody .days-row .dias-autorizados {
+  display: inline-block;
+  padding-left: 1em;
+}
+
+.tabla-licencias table tbody .days-row .dias-autorizados .dias_black {
+  font-weight: 500;
+}
+
+.tabla-licencias table tbody .days-row .n-dias, .tabla-licencias table tbody .days-row .n-dias_black, .tabla-licencias table tbody .days-row .n-dias_grey {
+  font-size: 11px;
+}
+
+.tabla-licencias table tbody .days-row .n-dias_black {
+  font-weight: 500;
+  color: #4a4a4a;
+}
+
+.tabla-licencias table tbody .days-row .n-dias_grey {
+  color: #767676;
+  font-weight: 300;
+  padding-left: 2em;
+}
+
+.link-licencia {
+  padding: 1.5em 0 3em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.link-licencia span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #1697F3;
+  padding-left: 1em;
+}
+
+.licencia-btn {
+  text-align: center;
+}
+
+.licencia-btn .btn-outline-icon {
+  border: 1px solid transparent;
+}
+
+.licencia-btn .btn-outline-icon img {
+  height: 17px;
+  vertical-align: sub;
+}
+
+.licencia-btn .btn-outline-icon span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #1697F3;
+}
+
+.licencias-vacia .licencias-info {
+  text-align: center;
+  border-bottom: 2px solid #7fbce3;
+  padding: 1.5em 0 1em;
+  margin-bottom: 1.5em;
+}
+
+.licencias-vacia .licencias-info img {
+  padding-bottom: 1.5em;
+}
+
+.licencias-vacia .licencias-info h5 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #4a4a4a;
+}
+
+.licencias-vacia p {
+  font-size: 16px;
+  font-weight: 300;
+  padding-bottom: 1em;
+  text-align: center;
+}
+
+.licencias-vacia ul {
+  padding-left: 30%;
+}
+
+.licencias-vacia ul li {
+  position: relative;
+  padding: 0 0 .5em 1.5em;
+  font-size: 14px;
+  font-weight: 300;
+  color: #1697F3;
+}
+
+.licencias-vacia ul li:before {
+  content: "\002022";
+  color: #dbf1fa;
+  font-size: 60px;
+  position: absolute;
+  top: -34px;
+  left: -4px;
+}
+
+.flujo-licencias_interior .progressTableItem {
+  padding: .1em 0 .5em 2em;
+}
+
+.flujo-licencias_interior .progressTableItem table {
+  width: 90%;
+}
+
+.flujo-licencias_interior .progressTableItem table tr {
+  border-bottom: 1px solid #b2d7ef;
+}
+
+.flujo-licencias_interior .progressTableItem table tr td {
+  padding: 0 .5em 1em;
+  vertical-align: top;
+}
+
+.flujo-licencias_interior .progressTableItem table tr td:nth-child(1) {
+  width: 10%;
+}
+
+.flujo-licencias_interior .progressTableItem table tr td:nth-child(2) {
+  width: 17%;
+}
+
+.flujo-licencias_interior .progressTableItem table tr td:nth-child(3) {
+  width: 50%;
+}
+
+.flujo-licencias_interior .progressTableItem table tr td:nth-child(4) {
+  width: 15%;
+}
+
+.flujo-licencias_interior .progressTableItem table tr td.multipleLines p {
+  padding-bottom: .5em;
+}
+
+.flujo-licencias_interior .progressTableItem table tr td.multipleLines ul {
+  padding: 1em 0 0 2em;
+}
+
+.flujo-licencias_interior .progressTableItem table tr td.multipleLines ul li {
+  position: relative;
+}
+
+.flujo-licencias_interior .progressTableItem table tr td.multipleLines ul li:before {
+  content: "•";
+  color: #1697f3;
+  display: inline-block;
+  width: 5px;
+  -webkit-transform: scale(2.5);
+          transform: scale(2.5);
+  position: absolute;
+  left: -15px;
+}
+
+.flujo-licencias_interior .progressTableItem table tr td.multipleLines .cuentaBancaria {
+  padding-top: 1.5em;
+}
+
+.flujo-licencias_interior .progressTableItem table tr td.multipleLines .cuentaBancaria img {
+  width: 30px;
+  vertical-align: top;
+  margin-right: .5em;
+}
+
+.flujo-licencias_interior .progressTableItem table tr td.multipleLines .cuentaBancaria_datos {
+  display: inline-block;
+  width: 75%;
+}
+
+.flujo-licencias_interior .progressTableItem table tr td.multipleLines .cuentaBancaria_datos h5 {
+  font-size: 12px;
+  font-weight: 500;
+  padding-bottom: .5em;
+}
+
+.flujo-licencias_interior .progressTableItem table tr td.multipleLines .cuentaBancaria_datos h6 {
+  font-size: 12px;
+  font-weight: 300;
+  padding-bottom: .5em;
+}
+
+.flujo-licencias_interior .progressTableItem table tr td.multipleLines .cuentaBancaria_datos button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-size: 12px;
+  color: #1697f3;
+}
+
+.flujo-licencias_interior .progressTableItem table tr td.multipleLines .cuentaBancaria_datos button img {
+  width: 16px;
+}
+
+.flujo-licencias_interior .progressTableItem .step-date, .flujo-licencias_interior .progressTableItem .step-content {
+  font-size: 13px;
+  font-weight: 300;
+  color: #4a4a4a;
+  line-height: 20px;
+}
+
+.flujo-licencias_interior .progressTableItem .progress-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #767676;
+}
+
+.flujo-licencias_interior .progressTableItem .step-future {
+  font-size: 13px;
+  font-weight: 500;
+  color: #767676;
+  font-style: italic;
+  padding: .5em 0 1em;
+}
+
+.flujo-licencias_interior .progressTableItem .progress-tableIcon {
+  font-size: 12px;
+  color: #1697F3;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flujo-licencias_interior .progressTableItem .progress-tableIcon img {
+  margin-right: 5px;
+  width: 13px;
+}
+
+.flujo-licencias_interior .progressTableItem .progress-tableIcon p {
+  width: 90%;
+}
+
+.flujo-licencias_interior .progressTableItem .progress-tableIcon:hover {
+  color: #1697F3;
+}
+
+.flujo-licencias_interior .progress-tracker {
+  margin: 20px .5rem;
+}
+
+.flujo-licencias_interior .progress-tracker .progress-step .icon-marker {
+  position: absolute;
+  left: 3px;
+  top: 1px;
+  width: 20px;
+}
+
+.flujo-licencias_interior .progress-tracker .progress-step .progress-marker, .flujo-licencias_interior .progress-tracker .progress-step:after {
+  background-color: #e2e2e3;
+}
+
+.flujo-licencias_interior .progress-tracker .progress-step.is-complete .progress-marker, .flujo-licencias_interior .progress-tracker .progress-step.is-complete:after {
+  background-color: #b2d7ef;
+}
+
+.flujo-licencias_interior .progress-tracker .progress-step.is-complete .progress-title {
+  color: #0079c8;
+}
+
+.flujo-licencias_interior .progress-tracker .progress-step.is-complete .progress-title.incomplete {
+  color: #767676;
+}
+
+.flujo-licencias_interior .progress-tracker .progress-step:last-child tr {
+  border: none;
+}
+
+.flujo-licencias_interior.detalle_pendiente .step-content span {
+  font-weight: 500;
+}
+
+.flujo-licencias_interior.detalle_pendiente .step-content span.color {
+  color: #a4219b;
+}
+
+.flujo-licencias_interior.detalle_pendiente .step-content span.color_green {
+  color: #007a3d;
+}
+
+.flujo-licencias_interior.detalle_ampliada .step-content span {
+  font-weight: 500;
+}
+
+.flujo-licencias_interior.detalle_ampliada .step-content span.color {
+  color: #40a2a4;
+}
+
+.flujo-licencias_interior.detalle_pagada .step-content span {
+  font-weight: 500;
+}
+
+.flujo-licencias_interior.detalle_pagada .step-content span.color {
+  color: #007a3d;
+}
+
+.flujo-licencias_interior.detalle_pagada .step-content span.color_yellow {
+  color: #fb7c40;
+}
+
+.flujo-licencias_interior.detalle_pagada .step-content span.color_aquamarine {
+  color: #40a2a4;
+}
+
+.flujo-licencias_interior.detalle_aprobada .step-content span {
+  font-weight: 500;
+}
+
+.flujo-licencias_interior.detalle_aprobada .step-content span.color {
+  color: #007a3d;
+}
+
+.flujo-licencias_interior.detalle_rechazada .step-content span {
+  font-weight: 500;
+}
+
+.flujo-licencias_interior.detalle_rechazada .step-content span.color {
+  color: #d81e05;
+}
+
+.flujo-licencias_interior.detalle_reducida .step-content span {
+  font-weight: 500;
+}
+
+.flujo-licencias_interior.detalle_reducida .step-content span.color {
+  color: #fb7c40;
+}
+
+.flujo-licencias_interior.detalle_rechazada .box-anexo, .flujo-licencias_interior.detalle_reducida .box-anexo {
+  width: 700px;
+  margin: 0 auto;
+  background-color: #efffda;
+  padding: 1.5em 3em;
+}
+
+.flujo-licencias_interior.detalle_rechazada .box-anexo h4, .flujo-licencias_interior.detalle_reducida .box-anexo h4 {
+  font-size: 18px;
+  color: #18542c;
+  margin-bottom: 1.5em;
+}
+
+.flujo-licencias_interior.detalle_rechazada .box-anexo h4 img, .flujo-licencias_interior.detalle_reducida .box-anexo h4 img {
+  width: 15px;
+  margin: -10px 1em 0 0;
+}
+
+.flujo-licencias_interior.detalle_rechazada .box-anexo_text, .flujo-licencias_interior.detalle_reducida .box-anexo_text {
+  color: #4a4a4a;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 18px;
+  text-align: center;
+  font-style: italic;
+  padding-bottom: 2em;
+}
+
+.flujo-licencias_interior.detalle_rechazada .box-anexo_text span, .flujo-licencias_interior.detalle_reducida .box-anexo_text span {
+  font-weight: 500;
+}
+
+.flujo-licencias_interior.detalle_rechazada .box-anexo .sucursalCompin, .flujo-licencias_interior.detalle_reducida .box-anexo .sucursalCompin {
+  border: 1px solid #678003;
+  border-radius: 2px;
+  background-color: #fff;
+  padding: 1em 1em 0;
+}
+
+.flujo-licencias_interior.detalle_rechazada .box-anexo .sucursalCompin_img, .flujo-licencias_interior.detalle_reducida .box-anexo .sucursalCompin_img {
+  width: 8%;
+  display: inline-block;
+  margin-right: .5em;
+  vertical-align: top;
+}
+
+.flujo-licencias_interior.detalle_rechazada .box-anexo .sucursalCompin_img img, .flujo-licencias_interior.detalle_reducida .box-anexo .sucursalCompin_img img {
+  height: 23px;
+}
+
+.flujo-licencias_interior.detalle_rechazada .box-anexo .sucursalCompin_text, .flujo-licencias_interior.detalle_reducida .box-anexo .sucursalCompin_text {
+  width: 86%;
+  display: inline-block;
+  text-align: left;
+  padding-bottom: 1em;
+}
+
+.flujo-licencias_interior.detalle_rechazada .box-anexo .sucursalCompin_text h6, .flujo-licencias_interior.detalle_reducida .box-anexo .sucursalCompin_text h6 {
+  font-size: 12px;
+  color: #767676;
+}
+
+.flujo-licencias_interior.detalle_rechazada .box-anexo .sucursalCompin_text p, .flujo-licencias_interior.detalle_reducida .box-anexo .sucursalCompin_text p {
+  font-size: 13px;
+  color: #4a4a4a;
+  font-style: initial;
+  font-weight: 500;
+}
+
+.flujo-licencias_interior.detalle_rechazada .box-anexo .sucursalCompin_text a, .flujo-licencias_interior.detalle_reducida .box-anexo .sucursalCompin_text a {
+  font-size: 12px;
+  color: #1697F3;
+  font-weight: 300;
+}
+
+.button-attach_licencias {
+  width: 700px;
+  margin: 0 auto;
+  padding: 0 0 1em;
+}
+
+.button-attach_licencias .titleStep {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 2em;
+  margin-left: -5em;
+}
+
+.button-attach_licencias .titleStep .numberCircle {
+  width: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 18px;
+  border: 1px solid #0079c7;
+  color: #0079c7;
+  font-weight: 500;
+  margin-right: 1em;
+}
+
+.button-attach_licencias .titleStep h3 {
+  color: #4a4a4a;
+  font-size: 18px;
+  margin: 0;
+}
+
+.button-attach_licencias .instructionBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 3em;
+}
+
+.button-attach_licencias .instructionBox .nextStep {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: 2em;
+  width: 3%;
+}
+
+.button-attach_licencias .instructionBox .stepBox {
+  width: 31%;
+  padding-left: 1.5em;
+}
+
+.button-attach_licencias .instructionBox .stepBox .imgStep {
+  margin-left: -20px;
+}
+
+.button-attach_licencias .instructionBox .stepBox_text {
+  padding-top: 1em;
+}
+
+.button-attach_licencias .instructionBox .stepBox_text h6 {
+  display: inline-block;
+  width: 15%;
+  font-size: 36px;
+  color: #1697F3;
+  text-align: right;
+  vertical-align: top;
+}
+
+.button-attach_licencias .instructionBox .stepBox_text p {
+  text-align: left;
+  font-size: 13px;
+  color: #767676;
+  font-weight: 500;
+  display: inline-block;
+  width: 80%;
+  padding-left: 1em;
+}
+
+.button-attach_licencias .instructionBox .stepBox_text a {
+  color: #1697F3;
+  font-size: 13px;
+  margin-left: 3em;
+  cursor: pointer;
+}
+
+.button-attach_licencias .instructionBox .stepBox_text a img {
+  margin: -5px 5px 0 0;
+}
+
+.button-attach_licencias h5 {
+  font-size: 18px;
+  padding-bottom: 1em;
+}
+
+.button-attach_licencias .box-documentos {
+  background-color: #efffda;
+  text-align: left;
+  padding: 1em;
+}
+
+.button-attach_licencias .box-documentos .btnFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button-attach_licencias .box-documentos .btnFlex.largeBox {
+  height: 12%;
+}
+
+.button-attach_licencias .box-documentos p {
+  font-size: 12px;
+  color: #4a4a4a;
+  font-weight: 300;
+  padding-bottom: 1em;
+}
+
+.button-attach_licencias .box-documentos ol li {
+  font-size: 12px;
+  color: #1697F3;
+  cursor: pointer;
+  padding-bottom: .5em;
+}
+
+.button-attach_licencias .box-documentos ol li img {
+  margin-left: .5em;
+  vertical-align: text-top;
+}
+
+.button-attach_licencias .box-documentos button {
+  width: 100%;
+  height: 60px;
+}
+
+.button-attach_licencias .attach-only {
+  padding: 2em 0;
+  border-bottom: 1px solid #7fbce3;
+}
+
+.button-attach_licencias .attach-only .noDocument {
+  text-align: center;
+  border: 2px dashed #e6e6e6;
+  padding: 2em;
+  margin: 0 1em 1em 0;
+  border-radius: 8px;
+}
+
+.button-attach_licencias .attach-only .noDocument span {
+  font-size: 14px;
+  font-weight: 300;
+  color: #6c6e71;
+}
+
+.button-attach_licencias .attach-only a img {
+  width: 16px;
+  vertical-align: top;
+  margin-right: 5px;
+}
+
+.button-attach_licencias .attach-only a p {
+  display: inline-block;
+  font-size: 11px;
+  font-style: italic;
+  color: #767676;
+  width: 90%;
+  text-align: left;
+}
+
+.button-attach_licencias .document-charged {
+  width: 100%;
+  display: none;
+}
+
+.button-attach_licencias .document-charged .documentItem .box_grey {
+  padding: 1em 0 !important;
+  background-color: #f7f7f7;
+  border-top: 1px solid #e6e6e6;
+}
+
+.button-attach_licencias .document-charged .documentItem .box_grey .text-document {
+  text-align: left;
+  display: inline-block;
+}
+
+.button-attach_licencias .document-charged .documentItem .box_grey .delete-document {
+  text-align: right;
+  display: inline-block;
+}
+
+.button-attach_licencias .document-charged .documentItem:first-child {
+  padding-top: 2em;
+}
+
+.button-attach_licencias .document-charged .documentItem:last-child .box_grey {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.button-attach_licencias .comprobanteCorreo h3 {
+  font-size: 18px;
+  color: #333333;
+  text-align: center;
+  margin: 1.5em 0 1em;
+}
+
+.button-attach_licencias .comprobanteCorreo p {
+  font-size: 12px;
+  color: #5e5e5e;
+  font-weight: 300;
+  margin-bottom: 5px;
+  text-align: left;
+  padding-left: 5em;
+}
+
+.button-attach_licencias .comprobanteCorreo .mail {
+  border: 1px solid #b5b6b8;
+  border-radius: 4px;
+  height: 40px;
+  width: 580px;
+  margin: 0 auto;
+  font-size: 14px;
+  font-style: italic;
+  color: #4a4a4a;
+  padding: .5em 1em;
+}
+
+.button-attach_licencias .comprobanteCorreo .checkIn input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.button-attach_licencias .comprobanteCorreo .checkIn .checkmark {
+  position: absolute;
+  left: -10px;
+  bottom: -2px;
+  height: 24px;
+  width: 24px;
+  border: 1px solid #1697f3;
+}
+
+.button-attach_licencias .comprobanteCorreo .checkIn .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.button-attach_licencias .comprobanteCorreo .checkIn input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.button-attach_licencias .comprobanteCorreo .checkIn .checkmark:after {
+  left: 8px;
+  bottom: 3px;
+  width: 7px;
+  height: 20px;
+  border: solid #1697f3;
+  border-width: 0 2.5px 2.5px 0;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+
+.button-attach_licencias .comprobanteCorreo .checkIn label {
+  font-size: 14px;
+  color: #4a4a4a;
+  font-weight: 300;
+  position: relative;
+  width: 85%;
+  margin: 1.5em 0 0 2.5em;
+}
+
+.button-attach_licencias .btnEnviar {
+  display: none;
+  padding-top: 2em;
+}
+
+.msj-exito_licencias h4 {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0 0 1.5em;
+}
+
+.msj-exito_licencias p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  width: 340px;
+  margin: 1.5em auto 0;
+}
+
+.msj-exito_licencias p span {
+  font-weight: 500;
+}
+
+.msj-exito_licencias .document-uploaded {
+  padding: 1.5em 0;
+}
+
+.msj-exito_licencias .document-uploaded p {
+  text-align: left;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #e6e6e6;
+  width: 600px;
+  margin: 0 auto;
+  padding: 1em 1.5em;
+}
+
+.msj-exito_licencias .document-uploaded p:last-child {
+  border: none;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../assets/fonts/Montserrat-MediumItalic.woff2") format("woff2"), url("../assets/fonts/Montserrat-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../assets/fonts/Montserrat-Italic.woff2") format("woff2"), url("../assets/fonts/Montserrat-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../assets/fonts/Montserrat-LightItalic.woff2") format("woff2"), url("../assets/fonts/Montserrat-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+.tooltipImg .tooltip {
+  visibility: hidden;
+  background-color: #f7f7f7;
+  border: 1px solid #1697f3;
+  border-radius: 10px;
+  padding: 1em;
+  min-width: 320px;
+  position: absolute;
+  right: -800%;
+  top: 160%;
+  z-index: 21;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.tooltipImg .tooltip h3 {
+  font-weight: 500;
+  color: #4c4c4c;
+  font-size: 13px;
+  padding: 0 0 1em;
+  text-align: left;
+  margin: 0;
+}
+
+.tooltipImg .tooltip .tooltipBox tr {
+  border: none;
+  background-color: transparent;
+}
+
+.tooltipImg .tooltip .tooltipBox tr td {
+  padding: 0 0 .5em;
+}
+
+.tooltipImg .tooltip .tooltipBox tr td img {
+  margin-top: -12px;
+}
+
+.tooltipImg .tooltip .tooltipBox tr td p {
+  font-weight: 300;
+  color: #4c4c4c;
+  font-size: 11px;
+  padding: 0 0 1em .5em;
+}
+
+.tooltipImg .tooltip .tooltipBox tr td p span {
+  font-weight: 500;
+  color: #4c4c4c;
+  font-size: 11px;
+}
+
+.tooltipImg .tooltip:before {
+  border-color: transparent;
+  border-style: solid;
+  border-bottom-color: #f7f7f7;
+  z-index: 2;
+  border-width: 0 5px 6px;
+  top: -5px;
+  left: 50%;
+  position: absolute;
+  content: "";
+}
+
+.tooltipImg .tooltip:after {
+  top: -6px;
+  left: 50%;
+  position: absolute;
+  content: "";
+  border-color: transparent;
+  border-style: solid;
+  border-width: 0 5px 6px;
+  border-bottom-color: #1697f3;
+}
+
+.tooltipImg:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modalCambio .modal-dialog {
+  max-width: 480px;
+  margin: 15em auto;
+}
+
+.modalCambio .modal-dialog .modal-content {
+  border-radius: 8px;
+  padding: 2em 2em 1em;
+}
+
+.modalCambio .modal-dialog .modal-content .modal-header {
+  border: none;
+  text-align: center;
+  position: relative;
+}
+
+.modalCambio .modal-dialog .modal-content .modal-header h5 {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.modalCambio .modal-dialog .modal-content .modal-header .close {
+  position: absolute;
+  right: 0;
+  top: -.5em;
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.modalCambio p {
+  font-weight: 300;
+  font-size: 12px;
+  color: #5e5e5e;
+  margin: 0;
+}
+
+.modalCambio input, .modalCambio .selectDiv {
+  border: 1px solid #b5b6b8;
+  border-radius: 4px;
+  padding: .5em 1em;
+  width: 100%;
+  height: 40px;
+  font-weight: 300;
+  font-size: 14px;
+  color: #4a4a4a;
+}
+
+.modalCambio .selectDiv {
+  background-position-y: 55%;
+}
+
+.modalCambio .selectDiv .select-styled {
+  border: none;
+  top: 10%;
+  font-style: initial;
+}
+
+.modalCambio .btnDown {
+  position: absolute;
+  top: 135%;
+  left: 50%;
+}
+
+.modalCambio .btn-blue {
+  width: 280px;
+  left: -50%;
+  height: 48px;
+  position: relative;
+}
+
+.modalDetalle .close span {
+  font-size: 35px !important;
+  font-weight: 400 !important;
+}
+
+.calculoModal {
+  text-align: left;
+}
+
+.calculoModal h3 {
+  text-align: left;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.calculoModal .bajada {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.calculoModal .importantInfo.big {
+  margin: -.5em auto 2em;
+}
+
+.calculoModal .importantInfo {
+  margin: 1em 0 1em;
+}
+
+.calculoModal .licencia-detalles {
+  background-color: #f0f8fd;
+  padding: 1em;
+  margin: 1em 0;
+  text-align: left;
+}
+
+.calculoModal .licencia-detalles .datos-beneficiario {
+  border-right: 1px solid #cecccf;
+  padding-bottom: 2em;
+}
+
+.calculoModal .licencia-detalles .datos-licencia {
+  padding-left: 1.5em;
+}
+
+.calculoModal .licencia-detalles .datos-licencia .boxPago {
+  background-color: rgba(22, 151, 243, 0.1);
+}
+
+.calculoModal .licencia-detalles .title-detalles {
+  color: #767676;
+  font-weight: 300;
+  font-size: 14px;
+  padding: 1em 1em 0;
+}
+
+.calculoModal .licencia-detalles .body-detalles {
+  color: #4a4a4a;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0 1em .5em;
+}
+
+.calculoModal .licencia-detalles .linkDeposito {
+  font-size: 12px;
+  color: #1697f3;
+  cursor: pointer;
+  padding-left: 1.5em;
+  margin-top: -5px;
+}
+
+.calculoModal .licencia-detalles .linkDeposito img {
+  margin-left: .5em;
+  vertical-align: text-top;
+}
+
+.calculoModal .tablasDetallePagoLicencia h3 {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.calculoModal .tablasDetallePagoLicencia .importantInfo {
+  margin: -.5em auto 2em;
+}
+
+.calculoModal .tablasDetallePagoLicencia table {
+  width: 100%;
+  margin-bottom: 4em;
+}
+
+.calculoModal .tablasDetallePagoLicencia table th {
+  padding: .5em;
+  border-bottom: 2px solid #0079c8;
+  color: #333333;
+  font-size: 14px;
+}
+
+.calculoModal .tablasDetallePagoLicencia table td {
+  padding: 2em .5em;
+  font-size: 14px;
+  font-weight: 300;
+  border-bottom: 1px solid #e2e2e3;
+}
+
+.tablasDetallePagoLicencia-mo {
+  padding: 2em 0;
+}
+
+.tablasDetallePagoLicencia-mo .leyendaPago {
+  padding: 0 14px;
+}
+
+.tablasDetallePagoLicencia-mo .leyendaPago p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.tablasDetallePagoLicencia-mo .leyendaPago p span {
+  font-weight: 500;
+}
+
+.tablasDetallePagoLicencia-mo h3 {
+  background-color: #f5faff;
+  font-size: 16px;
+  font-weight: 300;
+  padding: .8em;
+  text-align: center;
+  border-top: 1px solid #e2e2e3;
+  border-bottom: 1px solid #7fbce3;
+  margin: 1.5em 0 0;
+}
+
+.tablasDetallePagoLicencia-mo table {
+  width: 100%;
+}
+
+.tablasDetallePagoLicencia-mo table thead tr {
+  background-color: #eeeeee;
+}
+
+.tablasDetallePagoLicencia-mo table thead tr th {
+  padding: .5em;
+  font-size: 10px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.tablasDetallePagoLicencia-mo table tbody tr td {
+  border: 1px solid #e2e2e3;
+  padding: 1em .45em;
+  font-size: 10px;
+  font-weight: 300;
+}
+
+.tablasDetallePagoLicencia-mo table tbody tr .boldTD {
+  font-weight: 500 !important;
+}
+
+.tablasDetallePagoLicencia-mo .step-link {
+  padding: 1em 14px 0;
+}
+
+@media (max-width: 770px) {
+  .tabla-licencias.tablaInterior {
+    border-bottom: 1px solid #c0def2;
+    padding-bottom: 1em;
+  }
+  .tabla-licencias.tablaInterior tbody tr {
+    background-color: #fff !important;
+  }
+  .tabla-licencias.tablaInterior td {
+    padding: 1em 0 0 !important;
+  }
+  .tabla-licencias table tbody tr {
+    border: none !important;
+  }
+  .tabla-licencias table tbody tr td {
+    padding: 1em 0 1em !important;
+  }
+  .tabla-licencias table tbody .days-row {
+    border: none !important;
+    padding: 0 !important;
+  }
+  .tabla-licencias table tbody .days-row .n-dias_black, .tabla-licencias table tbody .days-row .n-dias_grey {
+    font-size: 14px;
+  }
+  .tabla-licencias.index tr:nth-child(even) {
+    border-bottom: 1px solid #bdbdbd !important;
+  }
+  .tabla-licencias.index tr td.days-row:first-child {
+    padding: 1em 0 1.5em 1em !important;
+  }
+  .tabla-licencias.index tr td:first-child {
+    padding: 1em 0 0 1em !important;
+  }
+  .flujo-licencias_interior .progress-step.is-complete .progress-title {
+    padding-bottom: 1em;
+  }
+  .flujo-licencias_interior .progress-tracker {
+    margin: 20px -4px !important;
+  }
+  .flujo-licencias_interior .progress-tableIcon {
+    margin-top: .5em;
+    display: block;
+  }
+  .flujo-licencias_interior .progress-tableIcon.middleIcon {
+    margin-bottom: .5em;
+  }
+  .flujo-licencias_interior .noDocument {
+    margin: 0 1em 1em 1em !important;
+  }
+  .flujo-licencias_interior table {
+    width: 100% !important;
+  }
+  .flujo-licencias_interior table tr {
+    border: none !important;
+  }
+  .flujo-licencias_interior table tr .step-future {
+    padding: 0.5em 0 0 !important;
+  }
+  .flujo-licencias_interior.detalle_rechazada .box-anexo, .flujo-licencias_interior.detalle_reducida .box-anexo {
+    width: 100% !important;
+    padding: 0.5em 0 1em !important;
+  }
+  .flujo-licencias_interior.detalle_rechazada .box-anexo h4, .flujo-licencias_interior.detalle_reducida .box-anexo h4 {
+    margin: 1em 0 !important;
+    text-align: center;
+  }
+  .flujo-licencias_interior.detalle_rechazada .box-anexo h4 img, .flujo-licencias_interior.detalle_reducida .box-anexo h4 img {
+    margin: 0 0.5em 0 0 !important;
+  }
+  .flujo-licencias_interior.detalle_rechazada .box-anexo_text, .flujo-licencias_interior.detalle_rechazada .box-anexo .sucursalCompin, .flujo-licencias_interior.detalle_reducida .box-anexo_text, .flujo-licencias_interior.detalle_reducida .box-anexo .sucursalCompin {
+    margin: 0 1em;
+  }
+  .flujo-licencias_interior.detalle_rechazada .box-anexo .col-xs-12:first-child, .flujo-licencias_interior.detalle_reducida .box-anexo .col-xs-12:first-child {
+    padding-bottom: 1em;
+  }
+  .flujo-licencias_interior .button-attach_licencias {
+    width: 100%;
+  }
+  .flujo-licencias_interior .button-attach_licencias .comprobanteCorreo h3 {
+    font-size: 16px;
+  }
+  .flujo-licencias_interior .button-attach_licencias .comprobanteCorreo p {
+    padding: 0;
+  }
+  .flujo-licencias_interior .button-attach_licencias .comprobanteCorreo .mail {
+    width: 100%;
+  }
+  .flujo-licencias_interior .button-attach_licencias .comprobanteCorreo .checkIn .checkmark {
+    left: -35px;
+    bottom: 0;
+  }
+  .flujo-licencias_interior .button-attach_licencias .titleStep {
+    margin: 0;
+  }
+  .flujo-licencias_interior .button-attach_licencias .box-documentos {
+    padding: 1em 0.5em !important;
+  }
+  .flujo-licencias_interior .button-attach_licencias .instructionBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .flujo-licencias_interior .button-attach_licencias .instructionBox .stepBox {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  .flujo-licencias_interior .button-attach_licencias .instructionBox .stepBox img {
+    margin: 0;
+  }
+  .flujo-licencias_interior .button-attach_licencias .instructionBox .stepBox a {
+    margin-left: 36%;
+    display: block;
+    text-align: left;
+  }
+  .flujo-licencias_interior .button-attach_licencias .instructionBox .stepBox_text {
+    padding-bottom: 2em;
+  }
+  .flujo-licencias_interior .button-attach_licencias .instructionBox .stepBox_text h6 {
+    width: 25% !important;
+  }
+  .flujo-licencias_interior .button-attach_licencias .instructionBox .stepBox_text p {
+    width: 60% !important;
+  }
+  .flujo-licencias_interior .msj-exito_licencias {
+    text-align: center;
+  }
+  .flujo-licencias_interior .msj-exito_licencias p {
+    width: 100%;
+  }
+  .pago {
+    padding: 0 0 1em 0 !important;
+  }
+  .pago .monto-total {
+    border-top: 1px solid #c0def2;
+    border-left: none !important;
+    padding: 1em 0 !important;
+  }
+  .licencias-vacia p {
+    text-align: left !important;
+  }
+  .licencias-vacia ul {
+    padding-left: 0 !important;
+  }
+  .bajadaColorDate {
+    text-align: left !important;
+  }
+  .item-info {
+    padding-left: 1em !important;
+  }
+  .modalCambio .modal-header {
+    padding: 0 !important;
+  }
+  .modalCambio .modal-content {
+    padding: 1em !important;
+  }
+  .modalCambio .modal-body {
+    padding: 10px 15px 15px;
+  }
+  .modalCambio .close {
+    right: -10px !important;
+    top: -0.8em !important;
+  }
+  .calculoModal .importantInfo.big {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  .calculoModal .importantInfo.big p {
+    width: 92%;
+  }
+  .calculoModal .datos-beneficiario {
+    border: none !important;
+  }
+  .tipoLicencia.indexTitle .tipoLicencia_title {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .tipoLicencia.indexTitle .tooltip {
+    right: -580.6% !important;
+    top: 110% !important;
+  }
+  .tipoLicencia.indexTitle .tooltip:before, .tipoLicencia.indexTitle .tooltip:after {
+    left: 62.5% !important;
+  }
+  .tooltip {
+    visibility: visible !important;
+    opacity: 1 !important;
+    right: -250% !important;
+    display: none;
+  }
+  .tooltip.tooltipShow {
+    display: block;
+  }
+  .tooltip:before, .tooltip:after {
+    left: 81.5% !important;
+  }
+  .sectionLicencias .importantInfo, .sectionLicencias .importantInfo.alertInfo {
+    width: 100%;
+    padding: 1em !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sectionLicencias .importantInfo img, .sectionLicencias .importantInfo.alertInfo img {
+    margin: 0 0 0.5em !important;
+  }
+  .modal-dialog {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 771px) and (max-width: 1049px) {
+  .main-container.wideContainer {
+    width: 810px !important;
+  }
+  .licencias-index {
+    width: 769px !important;
+    margin: 0 auto;
+  }
+  .titleStep {
+    margin: 0 !important;
+  }
+  .licencias-index .icon-arrow {
+    width: 15px;
+  }
+}
+
+@media (min-width: 1050px) {
+  .licencias-index {
+    width: 1100px !important;
+  }
+  .licencias-index {
+    margin: 0 auto;
+  }
+}

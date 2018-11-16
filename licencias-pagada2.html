@@ -59,6 +59,9 @@
       <section class="sectionLicencias">
         <div class="hide-sm">
           <h1 class="section-title section-title_desk"> Estado de mi licencia médica</h1>
+          <div class="importantInfo"><img src="./assets/icons/icon_info.svg" alt=""/>
+            <p>Si tu licencia es inferior a 11 días debes considerar que los primeros 3 días de licencia médica <span>no se pagarán</span>.</p>
+          </div>
         </div>
         <div class="breadcrumb-mo hide-md hide-lg"><a href="#"><img src="assets/icons/icon-arrow-left.svg" alt=""/>
             <p>Volver</p></a></div>
@@ -119,6 +122,9 @@
               </div>
             </div>
           </div><span class="bajada">Nº licencia: 362674</span>
+          <div class="importantInfo hide-md hide-lg"><img src="./assets/icons/icon_info.svg" alt=""/>
+            <p>Si tu licencia es inferior a 11 días debes considerar que los primeros 3 días de licencia médica <span>no se pagarán</span>.</p>
+          </div>
         </div>
         <div class="tabla-licencias tablaInterior">
           <table>
@@ -193,16 +199,16 @@
                 <td>
                   <p class="estadoLicencia"><img class="icon-state" src="assets/icons/icon-pagada.svg"/><span class="titulo-pagada">Pagada</span></p>
                   <p class="bajada-pagada hide-sm">el 26 de Abril de 2017</p>
-                  <p class="motivo hide-md hide-lg">Tendinitis</p>
+                  <p class="motivo hide-md hide-lg">Bronconeumonia</p>
                   <p class="empleador hide-md hide-lg">Rompecabeza SPA</p>
                 </td>
-                <td class="hide-sm"><span class="light-typo">6 Jun 2018</span></td>
+                <td class="hide-sm"><span class="light-typo">6 Jun 21018</span></td>
                 <td class="hide-sm"><span class="bold-typo">362674</span></td>
-                <td class="hide-sm"><span class="bold-typo">Tendinitis</span><a class="modificarSpan" data-toggle="modal" data-target="#modalCambioNombre"><img src="./assets/icons/icon_pencil.svg"/>
+                <td class="hide-sm"><span class="bold-typo">Bronconeumonia</span><a class="modificarSpan" data-toggle="modal" data-target="#modalCambioNombre"><img src="./assets/icons/icon_pencil.svg"/>
                     <p>Modificar nombre</p></a></td>
                 <td class="hide-sm"><span class="light-typo">Rompecabeza SPA</span></td>
                 <td class="hide-sm"><span class="bold-typo">30</span></td>
-                <td class="hide-sm"><span class="bold-typo">20</span></td>
+                <td class="hide-sm"><span class="bold-typo">45</span></td>
                 <td class="right next-col">
                   <p class="fecha hide-md hide-lg">Ingreso</p>
                   <p class="fecha hide-md hide-lg">6 Jun 2018</p>
@@ -216,7 +222,7 @@
                   </div>
                   <div class="dias-autorizados">
                     <p class="dias_black">Dias autorizados</p>
-                    <p class="n-dias_black">20</p>
+                    <p class="n-dias_black">45</p>
                   </div>
                 </td>
               </tr>
@@ -272,7 +278,7 @@
                 </table>
               </div>
             </li>
-            <li class="progress-step is-complete"><span class="progress-marker hidden"></span><img class="icon-marker" src="assets/icons/icon-reducida-fondo.svg" alt=""/>
+            <li class="progress-step is-complete"><span class="progress-marker hidden"></span><img class="icon-marker" src="assets/icons/icon-ampliada-fondo.svg" alt=""/>
               <div class="progressTableItem">
                 <table>
                   <tr>
@@ -282,10 +288,10 @@
                     <td>
                       <p class="step-date hide-md hide-lg">05/05/2018</p>
                       <h4 class="progress-title">Resolución licencia</h4>
-                      <p class="step-content hide-md hide-lg"><span class="color_yellow">Reducida</span> por reposo excesivo para diagnóstico.</p><a class="progress-tableIcon hide-md hide-lg" href="licencias-detalle.html"><img src="./assets/icons/icon-glosa.svg" alt=""/><span>Resolución</span></a>
+                      <p class="step-content hide-md hide-lg">La licencia fue <span class="color_aquamarine">ampliada</span> por post-parto.</p><a class="progress-tableIcon hide-md hide-lg" href="licencias-detalle.html"><img src="./assets/icons/icon-glosa.svg" alt=""/><span>Resolución</span></a>
                     </td>
                     <td class="hide-sm">
-                      <p class="step-content"><span class="color_yellow">Reducida</span> por reposo excesivo para diagnóstico.</p>
+                      <p class="step-content">La licencia fue <span class="color_aquamarine">ampliada</span> por post-parto.</p>
                     </td>
                     <td class="hide-sm"><a class="progress-tableIcon" data-toggle="modal" data-target="#modalDetalleLicencia"><img src="./assets/icons/icon-glosa.svg" alt=""/><span>Resolución</span></a></td>
                   </tr>
@@ -377,13 +383,49 @@
                     <td class="hide-sm">
                       <p class="step-date">05/05/2018</p>
                     </td>
-                    <td>
+                    <td class="multipleLines">
                       <p class="step-date hide-md hide-lg">05/05/2018</p>
-                      <h4 class="progress-title">Pago realizado</h4>
-                      <p class="step-content hide-md hide-lg">El pago se realizó correspondiente a los <span class="color">20 días</span>.</p><a class="progress-tableIcon hide-md hide-lg" href="licencias-detallePago.html"><img src="./assets/icons/icon-descargar2.svg" alt=""/><span>Cálculo</span></a>
+                      <h4 class="progress-title">Pago disponible</h4>
+                      <p class="step-content hide-md hide-lg">El pago se realizó correspondiente a los <span class="color">45 días</span>.</p><a class="progress-tableIcon hide-md hide-lg middleIcon" href="licencias-detallePago.html"><img src="./assets/icons/icon-descargar2.svg" alt=""/><span>Cálculo</span></a>
+                      <p class="step-content hide-md hide-lg">El monto total  a pagar: <span>$400.000 </span>. </p>
+                      <p class="step-content hide-md hide-lg"><span>Este pago se realizó de manera parcelada en 2 cuotas.</span></p>
+                      <ul class="hide-md hide-lg">
+                        <li> 
+                          <p class="step-content"><span>1º pago:</span> 27 de Agosto 2018 por el monto de <span>$200.000</span></p>
+                        </li>
+                        <li> 
+                          <p class="step-content"><span>2º pago:</span> 27 de Septiembre 2018 por el monto de <span>$200.000</span></p>
+                        </li>
+                      </ul>
+                      <div class="cuentaBancaria hide-md hide-lg"><img src="./assets/icons/icon_cuentab.svg"/>
+                        <div class="cuentaBancaria_datos">
+                          <h5>El pago será por Depósito en Cuenta Bancaria</h5>
+                          <h5>Cuenta inscrita para el pago</h5>
+                          <h6>Banco Estado - Cuenta RUT Nº 00013467476 </h6>
+                          <h6>Titular: Eduardo Rojas Calderón Arancibia</h6>
+                        </div>
+                      </div>
                     </td>
-                    <td class="hide-sm">
-                      <p class="step-content">El pago se realizó correspondiente a los <span class="color">20 días</span>.</p>
+                    <td class="hide-sm multipleLines">
+                      <p class="step-content">El pago se realizó correspondiente a los <span class="color">45 días</span>. </p>
+                      <p class="step-content">El monto total  a pagar: <span>$400.000 </span>. </p>
+                      <p class="step-content"><span>Este pago se realizó de manera parcelada en 2 cuotas.</span></p>
+                      <ul>
+                        <li> 
+                          <p class="step-content"><span>1º pago:</span> 27 de Agosto 2018 por el monto de <span>$200.000</span></p>
+                        </li>
+                        <li> 
+                          <p class="step-content"><span>2º pago:</span> 27 de Septiembre 2018 por el monto de <span>$200.000</span></p>
+                        </li>
+                      </ul>
+                      <div class="cuentaBancaria"><img src="./assets/icons/icon_cuentab.svg"/>
+                        <div class="cuentaBancaria_datos">
+                          <h5>El pago será por Depósito en Cuenta Bancaria</h5>
+                          <h5>Cuenta inscrita para el pago</h5>
+                          <h6>Banco Estado - Cuenta RUT Nº 00013467476 </h6>
+                          <h6>Titular: Eduardo Rojas Calderón Arancibia</h6>
+                        </div>
+                      </div>
                     </td>
                     <td class="hide-sm"><a class="progress-tableIcon" data-toggle="modal" data-target="#modalDetalleLicenciaPago"><img src="./assets/icons/icon-descargar2.svg" alt=""/><span>Cálculo</span></a></td>
                   </tr>
