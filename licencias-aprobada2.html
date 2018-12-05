@@ -59,8 +59,93 @@
       <section class="sectionLicencias">
         <div class="hide-sm">
           <h1 class="section-title section-title_desk"> Estado de mi licencia médica</h1>
-          <div class="importantInfo alertInfo"><img src="./assets/icons/icon_alert.svg" alt=""/>
-            <p><span>¡Importante!</span> Se encuentra pendiente documentación relacionada a tu licencia médica. Favor adjunta tu <span class="anclaSpan" onclick="goAnchor(this)">Declaración de Beneficiario</span>.</p>
+          <div class="msgAlertBox">
+            <div class="importantInfo alertInfo"><img src="./assets/icons/icon_alert.svg" alt=""/>
+              <p><span>¡Importante!</span> Se encuentra pendiente documentación relacionada a tu licencia médica. Favor adjunta tu <span class="anclaSpan" onclick="goAnchor(this)">Declaración de Beneficiario aquí</span></p>
+            </div>
+            <div class="alertBox">
+              <div class="button-attach_licencias">
+                <ul>
+                  <li>
+                    <div class="titleStep">
+                      <div class="numberCircle">1</div>
+                      <h3>¿Qué tengo que hacer para enviar el documento?</h3>
+                    </div>
+                    <div class="instructionBox">
+                      <div class="stepBox"><img class="imgStep" src="./assets/icons/step_1.svg"/>
+                        <div class="stepBox_text">
+                          <h6>1</h6>
+                          <p>Descarga<br>este documento</p><a> <img src="./assets/icons/icon_pdf.svg"/><span>Declaración.PDF</span></a>
+                        </div>
+                      </div><img class="nextStep hide-sm" src="./assets/icons/icon_flecha.svg"/>
+                      <div class="stepBox"><img class="imgStep" src="./assets/icons/step_2.svg"/>
+                        <div class="stepBox_text">
+                          <h6>2</h6>
+                          <p>Imprime<br>la declaración</p>
+                        </div>
+                      </div><img class="nextStep hide-sm" src="./assets/icons/icon_flecha.svg"/>
+                      <div class="stepBox"><img class="imgStep" src="./assets/icons/step_3.svg"/>
+                        <div class="stepBox_text">
+                          <h6>3</h6>
+                          <p>Complétala<br>y tómale una foto</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="titleStep">
+                      <div class="numberCircle">2</div>
+                      <h3>Agrega el documento</h3>
+                    </div>
+                    <div class="box-documentos">
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-6 no-padding">
+                          <p>Adjuntar documento</p>
+                          <ol>
+                            <li>1. Declaración<img src="assets/icons/icon-ojo.svg" alt=""/></li>
+                          </ol>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 no-padding btnFlex">
+                          <button class="btn-outline-icon" data-toggle="modal" data-target="#adjuntosModal"><img src="assets/icons/icon-camara.svg" alt=""/><span> Adjuntar</span></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row attach-only">
+                      <div class="col-xs-12 col-sm-6 offset-sm-6 no-padding">
+                        <div class="noDocument box-dashed">
+                          <p>No hay documentos adjuntos</p>
+                        </div><a><img src="assets/icons/icon-alert.svg" alt=""/>
+                          <p>Puedes adjuntar la cantidad de documentos que necesites.</p></a>
+                      </div>
+                      <div class="col-xs-12">
+                        <div class="document-charged">
+                          <div class="row documentItem">
+                            <div class="col-12 no-padding">
+                              <div class="row box_grey">
+                                <div class="col-xs-10 text-document">
+                                  <p>1 | declaracion.jpg</p>
+                                </div>
+                                <div class="col-xs-2 delete-document"><a href="javascript:void(0)"><img class="deleteDoc" src="./assets/icons/icon_trash.svg"/></a></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="btnEnviar">
+                      <button class="btn-next" data-toggle="modal" data-target="#reembolsoModal">Enviar Documentos</button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="msj-exito_licencias hide">
+                <h4>Documentos enviados con éxito</h4><img src="./assets/icons/icon-exito.svg"/>
+                <p>El comprobante de tus documentos ha sido enviada a tu correo <span>eduardo.rojas@gmail.com</span></p>
+                <div class="document-uploaded">
+                  <p>1 | declaracion.jpg</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="breadcrumb-mo hide-md hide-lg"><a href="#"><img src="assets/icons/icon-arrow-left.svg" alt=""/>
@@ -122,8 +207,93 @@
               </div>
             </div>
           </div><span class="bajada">Nº licencia: 362674</span>
-          <div class="importantInfo alertInfo hide-md hide-lg"><img src="./assets/icons/icon_alert.svg" alt=""/>
-            <p><span>¡Importante!</span> Se encuentra pendiente documentación relacionada a tu licencia médica. Favor adjunta tu <span class="anclaSpan" onclick="goAnchor(this)">Declaración de Beneficiario</span>.</p>
+          <div class="msgAlertBox hide-md hide-lg">
+            <div class="importantInfo alertInfo"><img src="./assets/icons/icon_alert.svg" alt=""/>
+              <p><span>¡Importante!</span> Se encuentra pendiente documentación relacionada a tu licencia médica. Favor adjunta tu <span class="anclaSpan" onclick="goAnchor(this)">Declaración de Beneficiario aquí</span></p>
+            </div>
+            <div class="alertBox">
+              <div class="button-attach_licencias">
+                <ul>
+                  <li>
+                    <div class="titleStep">
+                      <div class="numberCircle">1</div>
+                      <h3>¿Qué tengo que hacer para enviar el documento?</h3>
+                    </div>
+                    <div class="instructionBox">
+                      <div class="stepBox"><img class="imgStep" src="./assets/icons/step_1.svg"/>
+                        <div class="stepBox_text">
+                          <h6>1</h6>
+                          <p>Descarga<br>este documento</p><a> <img src="./assets/icons/icon_pdf.svg"/><span>Declaración.PDF</span></a>
+                        </div>
+                      </div><img class="nextStep hide-sm" src="./assets/icons/icon_flecha.svg"/>
+                      <div class="stepBox"><img class="imgStep" src="./assets/icons/step_2.svg"/>
+                        <div class="stepBox_text">
+                          <h6>2</h6>
+                          <p>Imprime<br>la declaración</p>
+                        </div>
+                      </div><img class="nextStep hide-sm" src="./assets/icons/icon_flecha.svg"/>
+                      <div class="stepBox"><img class="imgStep" src="./assets/icons/step_3.svg"/>
+                        <div class="stepBox_text">
+                          <h6>3</h6>
+                          <p>Complétala<br>y tómale una foto</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="titleStep">
+                      <div class="numberCircle">2</div>
+                      <h3>Agrega el documento</h3>
+                    </div>
+                    <div class="box-documentos">
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-6 no-padding">
+                          <p>Adjuntar documento</p>
+                          <ol>
+                            <li>1. Declaración<img src="assets/icons/icon-ojo.svg" alt=""/></li>
+                          </ol>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 no-padding btnFlex">
+                          <button class="btn-outline-icon" data-toggle="modal" data-target="#adjuntosModal"><img src="assets/icons/icon-camara.svg" alt=""/><span> Adjuntar</span></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row attach-only">
+                      <div class="col-xs-12 col-sm-6 offset-sm-6 no-padding">
+                        <div class="noDocument box-dashed">
+                          <p>No hay documentos adjuntos</p>
+                        </div><a><img src="assets/icons/icon-alert.svg" alt=""/>
+                          <p>Puedes adjuntar la cantidad de documentos que necesites.</p></a>
+                      </div>
+                      <div class="col-xs-12">
+                        <div class="document-charged">
+                          <div class="row documentItem">
+                            <div class="col-12 no-padding">
+                              <div class="row box_grey">
+                                <div class="col-xs-10 text-document">
+                                  <p>1 | declaracion.jpg</p>
+                                </div>
+                                <div class="col-xs-2 delete-document"><a href="javascript:void(0)"><img class="deleteDoc" src="./assets/icons/icon_trash.svg"/></a></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="btnEnviar">
+                      <button class="btn-next" data-toggle="modal" data-target="#reembolsoModal">Enviar Documentos</button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="msj-exito_licencias hide">
+                <h4>Documentos enviados con éxito</h4><img src="./assets/icons/icon-exito.svg"/>
+                <p>El comprobante de tus documentos ha sido enviada a tu correo <span>eduardo.rojas@gmail.com</span></p>
+                <div class="document-uploaded">
+                  <p>1 | declaracion.jpg</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="tabla-licencias tablaInterior">
@@ -539,139 +709,48 @@
               </div>
             </li>
           </ul>
-          <div class="button-attach_licencias">
-            <ul>
-              <li>
-                <div class="titleStep">
-                  <div class="numberCircle">1</div>
-                  <h3>¿Qué tengo que hacer?</h3>
-                </div>
-                <div class="instructionBox">
-                  <div class="stepBox"><img class="imgStep" src="./assets/icons/step_1.svg"/>
-                    <div class="stepBox_text">
-                      <h6>1</h6>
-                      <p>Descarga<br>este documento</p><a> <img src="./assets/icons/icon_pdf.svg"/><span>Declaración.PDF</span></a>
-                    </div>
-                  </div><img class="nextStep hide-sm" src="./assets/icons/icon_flecha.svg"/>
-                  <div class="stepBox"><img class="imgStep" src="./assets/icons/step_2.svg"/>
-                    <div class="stepBox_text">
-                      <h6>2</h6>
-                      <p>Imprime<br>la declaración</p>
-                    </div>
-                  </div><img class="nextStep hide-sm" src="./assets/icons/icon_flecha.svg"/>
-                  <div class="stepBox"><img class="imgStep" src="./assets/icons/step_3.svg"/>
-                    <div class="stepBox_text">
-                      <h6>3</h6>
-                      <p>Complétala<br>y tómale una foto</p>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="titleStep">
-                  <div class="numberCircle">2</div>
-                  <h3>Agrega el documento</h3>
-                </div>
-                <div class="box-documentos">
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-6 no-padding">
-                      <p>Adjuntar documento</p>
-                      <ol>
-                        <li>1. Declaración<img src="assets/icons/icon-ojo.svg" alt=""/></li>
-                      </ol>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 no-padding btnFlex">
-                      <button class="btn-outline-icon" data-toggle="modal" data-target="#adjuntosModal"><img src="assets/icons/icon-camara.svg" alt=""/><span> Adjuntar</span></button>
-                    </div>
-                  </div>
-                </div>
-                <div class="row attach-only">
-                  <div class="col-xs-12 col-sm-6 offset-sm-6 no-padding">
-                    <div class="noDocument box-dashed">
-                      <p>No hay documentos adjuntos</p>
-                    </div><a><img src="assets/icons/icon-alert.svg" alt=""/>
-                      <p>Puedes adjuntar la cantidad de documentos que necesites.</p></a>
-                  </div>
-                  <div class="col-xs-12">
-                    <div class="document-charged">
-                      <div class="row documentItem">
-                        <div class="col-12 no-padding">
-                          <div class="row box_grey">
-                            <div class="col-xs-10 text-document">
-                              <p>1 | declaracion.jpg</p>
-                            </div>
-                            <div class="col-xs-2 delete-document"><a href="javascript:void(0)"><img class="deleteDoc" src="./assets/icons/icon_trash.svg"/></a></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="comprobanteCorreo">
-                  <h3>Te enviaremos el comprobante de tus documentos al siguiente correo</h3>
-                  <p>Correo electrónico</p>
-                  <input class="mail" type="text" value="eduardo.rojas@gmail.com"/>
-                  <div class="checkIn">
-                    <label for="checkTerms">Acepto recibir correspondencia electrónica de Isapre CruzBlanca en mi correo.
-                      <input type="checkbox" id="checkTerms"/><span class="checkmark"></span>
-                    </label>
-                  </div>
-                </div>
-                <div class="btnEnviar">
-                  <button class="btn-next" data-toggle="modal" data-target="#reembolsoModal">Enviar Documentos</button>
-                </div>
-                <div class="modal fade" id="adjuntosModal" tabindex="-1" role="dialog" aria-labelledby="reembolsoModalLabel" aria-hidden="true">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="reembolsoModalLabel">Adjuntar archivo</h5>
-                        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                      </div>
-                      <div class="modal-body">
-                        <ul>
-                          <li><a href="assets/imgs/boleta.png" target="_blank"><img src="./assets/icons/icon_img.svg"/><span>Foto</span></a></li>
-                          <li><a href="assets/imgs/boleta.png" target="_blank"><img src="./assets/icons/icon_documenr.svg"/><span>Documento</span></a></li>
-                        </ul>
-                      </div>
-                      <div class="modal-footer center">
-                        <button class="btn-blue" type="button" data-dismiss="modal" id="btnAdjuntarArchivos">Finalizar</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="msj-exito_licencias hide">
-            <h4>Documentos enviados con éxito</h4><img src="./assets/icons/icon-exito.svg"/>
-            <p>El comprobante de tus documentos ha sido enviada a tu correo <span>eduardo.rojas@gmail.com</span></p>
-            <div class="document-uploaded">
-              <p>1 | declaracion.jpg</p>
-            </div>
-          </div>
         </div>
       </section>
-      <div class="modalCambio modal fade" id="modalCambioNombre" tabindex="-1" role="dialog" aria-labelledby="reembolsoModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5>Modificar nombre de licencia</h5>
-              <button class="close" type="button" data-dismiss="modal" aria-label="Close">×</button>
-            </div>
-            <div class="modal-body">
-              <p>Nombre de licencia</p>
-              <input type="text" value="Resfrío pepita"/>
-              <div class="btnDown">
-                <button class="btn-blue" type="button" data-dismiss="modal">Guardar</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="navbar-bottom hide-sm"><a href="#">
           <div class="navbar-bottom-return"><img src="assets/icons/icon-volverizq.svg" alt=""/>
             <p>Volver</p>
           </div></a></div>
+    </div>
+    <div class="modalCambio modal fade" id="modalCambioNombre" tabindex="-1" role="dialog" aria-labelledby="reembolsoModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5>Modificar nombre de licencia</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">×</button>
+          </div>
+          <div class="modal-body">
+            <p>Nombre de licencia</p>
+            <input type="text" value="Resfrío pepita"/>
+            <div class="btnDown">
+              <button class="btn-blue" type="button" data-dismiss="modal">Guardar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="adjuntosModal" tabindex="-1" role="dialog" aria-labelledby="reembolsoModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="reembolsoModalLabel">Adjuntar archivo</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li><a href="assets/imgs/boleta.png" target="_blank"><img src="./assets/icons/icon_img.svg"/><span>Foto</span></a></li>
+              <li><a href="assets/imgs/boleta.png" target="_blank"><img src="./assets/icons/icon_documenr.svg"/><span>Documento</span></a></li>
+            </ul>
+          </div>
+          <div class="modal-footer center">
+            <button class="btn-blue" type="button" data-dismiss="modal" id="btnAdjuntarArchivos">Finalizar</button>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="hide-md hide-lg">
       <div class="footer-floating-option"><img src="assets/icons/icon-asistente.svg" alt=""/></div>

@@ -51,7 +51,7 @@
 }
 
 .tipoLicencia .importantInfo {
-  margin: 1em 0 0 !important;
+  margin: 1em 0 1em !important;
 }
 
 .licencias-index {
@@ -77,6 +77,28 @@
   z-index: 21;
 }
 
+.sectionLicencias .alertBox {
+  width: 95%;
+  border: 1px dotted #fb7c40;
+  border-top: none;
+  margin: -3em auto 2em;
+  border-radius: 8px;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 1s ease-in-out;
+  transition: max-height 1s ease-in-out;
+}
+
+.sectionLicencias .alertBox.showAlert {
+  max-height: 150vh;
+  -webkit-transition: max-height 1s ease-in-out;
+  transition: max-height 1s ease-in-out;
+}
+
+.sectionLicencias .alertBox .button-attach_licencias {
+  padding-top: 3em;
+}
+
 .sectionLicencias .importantInfo {
   margin: -1.5em auto 2em;
   display: -webkit-box;
@@ -85,11 +107,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 75%;
-  padding: 1em 2em;
+  padding: 1em 0;
   border-radius: 8px;
-  border: 1px dotted #0079c7;
-  background-color: #f7f7f7;
+  border: 1px dotted #00a8ff;
+  background-color: #c5eeff;
 }
 
 .sectionLicencias .importantInfo p {
@@ -113,9 +138,10 @@
 }
 
 .sectionLicencias .importantInfo.alertInfo {
-  width: 91%;
+  width: 95%;
   border: 1px dotted #fb7c40;
   background-color: #fdf6dd;
+  position: relative;
 }
 
 .sectionLicencias .importantInfo.alertInfo p span {
@@ -124,9 +150,22 @@
 }
 
 .sectionLicencias .importantInfo.alertInfo p span.anclaSpan {
-  color: #00a8ff;
-  text-decoration: underline;
+  color: #0079c7;
   cursor: pointer;
+}
+
+.sectionLicencias .importantInfo.alertInfo p span.anclaSpan:after {
+  content: url(../assets/icons/icon-arrow-bottom.svg);
+  margin-left: 10px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  display: inline-block;
+}
+
+.sectionLicencias .importantInfo.alertInfo p span.anclaSpan.rotate:after {
+  content: url(../assets/icons/icon-arrow-bottom.svg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .tabla-licencias.tablaInterior tbody tr {
@@ -215,6 +254,10 @@
   margin-left: 5px;
   font-size: 12px;
   color: #1697F3;
+}
+
+.tabla-licencias table tbody td:nth-child(6), .tabla-licencias table tbody td:nth-child(7) {
+  text-align: center;
 }
 
 .tabla-licencias table tbody .modificarNombre {
@@ -760,7 +803,7 @@
 }
 
 .button-attach_licencias .titleStep .numberCircle {
-  width: 40px;
+  min-width: 40px;
   line-height: 40px;
   border-radius: 50%;
   text-align: center;
@@ -798,6 +841,7 @@
 
 .button-attach_licencias .instructionBox .stepBox .imgStep {
   margin-left: -20px;
+  width: 70px;
 }
 
 .button-attach_licencias .instructionBox .stepBox_text {
@@ -883,8 +927,7 @@
 }
 
 .button-attach_licencias .attach-only {
-  padding: 2em 0;
-  border-bottom: 1px solid #7fbce3;
+  padding: 2em 0 0;
 }
 
 .button-attach_licencias .attach-only .noDocument {
@@ -943,79 +986,6 @@
 
 .button-attach_licencias .document-charged .documentItem:last-child .box_grey {
   border-bottom: 1px solid #e6e6e6;
-}
-
-.button-attach_licencias .comprobanteCorreo h3 {
-  font-size: 18px;
-  color: #333333;
-  text-align: center;
-  margin: 1.5em 0 1em;
-}
-
-.button-attach_licencias .comprobanteCorreo p {
-  font-size: 12px;
-  color: #5e5e5e;
-  font-weight: 300;
-  margin-bottom: 5px;
-  text-align: left;
-  padding-left: 5em;
-}
-
-.button-attach_licencias .comprobanteCorreo .mail {
-  border: 1px solid #b5b6b8;
-  border-radius: 4px;
-  height: 40px;
-  width: 580px;
-  margin: 0 auto;
-  font-size: 14px;
-  font-style: italic;
-  color: #4a4a4a;
-  padding: .5em 1em;
-}
-
-.button-attach_licencias .comprobanteCorreo .checkIn input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
-
-.button-attach_licencias .comprobanteCorreo .checkIn .checkmark {
-  position: absolute;
-  left: -10px;
-  bottom: -2px;
-  height: 24px;
-  width: 24px;
-  border: 1px solid #1697f3;
-}
-
-.button-attach_licencias .comprobanteCorreo .checkIn .checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-.button-attach_licencias .comprobanteCorreo .checkIn input:checked ~ .checkmark:after {
-  display: block;
-}
-
-.button-attach_licencias .comprobanteCorreo .checkIn .checkmark:after {
-  left: 8px;
-  bottom: 3px;
-  width: 7px;
-  height: 20px;
-  border: solid #1697f3;
-  border-width: 0 2.5px 2.5px 0;
-  -webkit-transform: rotate(40deg);
-  transform: rotate(40deg);
-}
-
-.button-attach_licencias .comprobanteCorreo .checkIn label {
-  font-size: 14px;
-  color: #4a4a4a;
-  font-weight: 300;
-  position: relative;
-  width: 85%;
-  margin: 1.5em 0 0 2.5em;
 }
 
 .button-attach_licencias .btnEnviar {
@@ -1466,60 +1436,79 @@
   .flujo-licencias_interior.detalle_rechazada .box-anexo .col-xs-12:first-child, .flujo-licencias_interior.detalle_reducida .box-anexo .col-xs-12:first-child {
     padding-bottom: 1em;
   }
-  .flujo-licencias_interior .button-attach_licencias {
+  .button-attach_licencias {
     width: 100%;
+    padding: 3em 10px 0 !important;
   }
-  .flujo-licencias_interior .button-attach_licencias .comprobanteCorreo h3 {
+  .button-attach_licencias .box-documentos {
+    width: calc(100% + 20px);
+    margin-left: -10px;
+  }
+  .button-attach_licencias .attach-only {
+    padding-bottom: 1em;
+  }
+  .button-attach_licencias .attach-only .noDocument {
+    margin: 0 0 1em 0 !important;
+  }
+  .button-attach_licencias .attach-only .box_grey {
+    width: calc(100% + 50px);
+    margin-left: -25px !important;
+  }
+  .button-attach_licencias .btnEnviar {
+    padding: 1em 0 2em !important;
+  }
+  .button-attach_licencias .comprobanteCorreo h3 {
     font-size: 16px;
   }
-  .flujo-licencias_interior .button-attach_licencias .comprobanteCorreo p {
+  .button-attach_licencias .comprobanteCorreo p {
     padding: 0;
   }
-  .flujo-licencias_interior .button-attach_licencias .comprobanteCorreo .mail {
+  .button-attach_licencias .comprobanteCorreo .mail {
     width: 100%;
   }
-  .flujo-licencias_interior .button-attach_licencias .comprobanteCorreo .checkIn .checkmark {
+  .button-attach_licencias .comprobanteCorreo .checkIn .checkmark {
     left: -35px;
     bottom: 0;
   }
-  .flujo-licencias_interior .button-attach_licencias .titleStep {
+  .button-attach_licencias .titleStep {
     margin: 0;
   }
-  .flujo-licencias_interior .button-attach_licencias .box-documentos {
+  .button-attach_licencias .box-documentos {
     padding: 1em 0.5em !important;
   }
-  .flujo-licencias_interior .button-attach_licencias .instructionBox {
+  .button-attach_licencias .instructionBox {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .flujo-licencias_interior .button-attach_licencias .instructionBox .stepBox {
+  .button-attach_licencias .instructionBox .stepBox {
     width: 100%;
     padding: 0;
     text-align: center;
   }
-  .flujo-licencias_interior .button-attach_licencias .instructionBox .stepBox img {
+  .button-attach_licencias .instructionBox .stepBox img {
     margin: 0;
   }
-  .flujo-licencias_interior .button-attach_licencias .instructionBox .stepBox a {
+  .button-attach_licencias .instructionBox .stepBox a {
     margin-left: 36%;
     display: block;
     text-align: left;
   }
-  .flujo-licencias_interior .button-attach_licencias .instructionBox .stepBox_text {
+  .button-attach_licencias .instructionBox .stepBox_text {
     padding-bottom: 2em;
   }
-  .flujo-licencias_interior .button-attach_licencias .instructionBox .stepBox_text h6 {
+  .button-attach_licencias .instructionBox .stepBox_text h6 {
     width: 25% !important;
   }
-  .flujo-licencias_interior .button-attach_licencias .instructionBox .stepBox_text p {
+  .button-attach_licencias .instructionBox .stepBox_text p {
     width: 60% !important;
   }
-  .flujo-licencias_interior .msj-exito_licencias {
+  .msj-exito_licencias {
     text-align: center;
+    padding-top: 4em;
   }
-  .flujo-licencias_interior .msj-exito_licencias p {
+  .msj-exito_licencias p {
     width: 100%;
   }
   .pago {
@@ -1576,6 +1565,12 @@
   }
   .tipoLicencia.indexTitle .tooltip:before, .tipoLicencia.indexTitle .tooltip:after {
     left: 62.5% !important;
+  }
+  .tipoLicencia .alertBox {
+    width: 100% !important;
+  }
+  .tipoLicencia .alertBox.showAlert {
+    max-height: 250vh;
   }
   .tooltip {
     visibility: visible !important;

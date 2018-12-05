@@ -101,18 +101,22 @@ $('.btn-filter-desk').click(function () {
 
 // Ancla efecto
 
-function scrolling(e) {
-    $('html, body').animate({
-        scrollTop: $( e ).offset().top - 15
-    }, 700);
-}
+$('.anclaSpan').click(function() {
+    $('.alertBox').toggleClass('showAlert');
+    $('.anclaSpan').toggleClass('rotate');
+})
 
 // SHOW NEXT ELEMENT
 function goAnchor(e) {
-    let lol = e;
-    let f = $(e).parents(".sectionLicencias").find('.button-attach_licencias')
+    let f = $(e).parents(".msgAlertBox")
     scrolling(f);
 }
+function scrolling(e) {
+    $('html, body').animate({
+        scrollTop: $( e ).offset().top - 5
+    }, 700);
+}
+
 
 //Tooltip mobile
 $('.tooltipImg img').click(function () {
